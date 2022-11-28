@@ -26,74 +26,21 @@ def play_again():
 
 questions = {
 "What is Deadpools real name?": "B",
-"When was the first Deadpool comic released": "D",
+"When was the first Deadpool comic released": "C",
 "When was the first Deadpool Movie released": "B",
 "Who is Deadpools main Romance/girlfriend in the Movies": "C",
 "Deadpool has bovinophobia, which is the fear of what..?": "A",
-"What Fictional Character has Deadpool killed in the comics": "D",
+"What Fictional Character has Deadpool killed in the comics": "C",
 "Where is Deadpool from?": "C",
 "What Movie was the character first played by Ryan Reynolds?": "A"
 }
-question: "What is Deadpools real name?",
-      a: "Richard Webber",
-      b: "Wade Wilson",
-      c: "Slade Wilson",
-      d: "Hal Jordan",
-      correct: "b"
-    },
-    {
-        question: "When was the first Deadpool comic released",
-        a: "2000",
-        b: "2016",
-        c: "2018",
-        d: "1991",
-        correct: "d"
-    },
-    {
-        question: "When was the first Deadpool Movie released",
-        a: "2000",
-        b: "2016",
-        c: "2018",
-        d: "1991",
-        correct: "b"
-    },
-    {
-        question: "Who is Deadpools main Romance/girlfriend in the Movies",
-        a: "Rogue",
-        b: "Storm",
-        c: "Vanessa",
-        d: "Logan",
-        correct: "c"
-    },
-    {
-        question: "Deadpool has bovinophobia, whis is the fear of what..?",
-        a: "Cows",
-        b: "Apples",
-        c: "Driving",
-        d: "Children",
-        correct: "a"
-    },
-    {
-        question: "What Fictional Character has Deadpool killed in the comics",
-        a: "Sherlock Holmes",
-        b: "Huckleberry Finn",
-        c: "Moby Dick",
-        d: "All of the above",
-        correct: "d"
-    },
-    {
-        question: "Where is Deadpool from?",
-        a: "USA",
-        b: "UK",
-        c: "Canada",
-        d: "Sweden",
-        correct: "c"
-    },
-    {
-        question: "What Movie was the character first played by Ryan Reynolds?",
-        a: "X-Men Origins: Wolverine",
-        b: "Deadpool: 1",
-        c: "Deadpool: 2",
-        d: "Avengers: Endgame",
-        correct: "a"
-    },
+
+
+options = [["A: Richard Webber","B: Wade Wilson","C: Slade Wilson"]
+          ["A: 2000", "B: 2016", "C: 1991"],
+          ["A: 2000", "B: 2016", "C: 2018"],
+          ["A: Rogue", "B: Storm", "C: Vanessa"],
+          ["A: Cows", "B: Apples", "C: Driving"],
+          ["A: Sherlock Holmes", "B: Moby Dick", "C: All of the above"],
+          ["A: USA", "B: UK", "C: Canada"],
+          ["A: X-Men Origins: Wolverine", "B: Deadpool: 1", "C: Deadpool: 2"]]
