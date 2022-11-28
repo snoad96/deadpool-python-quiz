@@ -11,22 +11,44 @@ def new_game():
         print(key)
         for i in options[question_num-1]:
             print(i)
+        guess = input("Try (A, B, or C").strip().lower()
+        guesses.append(guess)
 
+        correct_guesses += check_answer(questions.get(key), guess)
         question_num += 1
 
+    display_score(correct_guesses, guesses)
 
-def check_answers():
+
+def check_answers(answer, guess):
     """
     A Function that will check the correct answers for the User
     """
-    
+    if answer == guess:
+        print("Nailed It!!!")
+        return 1
+    else:
+        print("YOU are WRONG!")
+        return 0
 
 
-def display_score():
+def display_score(correct_guesses, guesses):
     """
     A score card for the player to keep track with
     """
+    print("_>_>_>_>_>_>")
+    print("Scores")
+    print("_>_>_>_>_>_>")
     
+    print("Answers: ", end="")
+    for i in questions:
+        print(questions.get(i), end="")
+    print()
+
+    print("Guesses: ", end="")
+    for i in guesses:
+        print(i, end="")
+    print()
 
 
 def play_again():
