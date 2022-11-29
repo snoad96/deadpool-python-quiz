@@ -11,7 +11,7 @@ def new_game():
         print(key)
         for i in options[question_num-1]:
             print(i)
-        guess = input("Try (A, B, or C").strip().lower()
+        guess = input("Try (A, B, or C)").strip().lower()
         guesses.append(guess)
 
         correct_guesses += check_answer(questions.get(key), guess)
@@ -42,13 +42,16 @@ def display_score(correct_guesses, guesses):
     
     print("Answers: ", end="")
     for i in questions:
-        print(questions.get(i), end="")
+        print(questions.get(i), end=" ")
     print()
 
     print("Guesses: ", end="")
     for i in guesses:
-        print(i, end="")
+        print(i, end=" ")
     print()
+
+    score = int((correct_guesses/len(questions))*100)
+    print(f"You manged to get: "+str(score)+"%")
 
 
 def play_again():
