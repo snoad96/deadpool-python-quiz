@@ -98,3 +98,8 @@ options = [["A: Richard Webber","B: Wade Wilson","C: Slade Wilson"],
 
 
 new_game()
+
+while play_again():
+    new_game()
+
+print("Guess you aren't nerdy enough.")
