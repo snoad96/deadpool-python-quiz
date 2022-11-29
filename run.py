@@ -20,7 +20,7 @@ def new_game():
     display_score(correct_guesses, guesses)
 
 
-def check_answers(answer, guess):
+def check_answer(answer, guess):
     """
     A Function that will check the correct answers for the User
     """
