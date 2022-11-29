@@ -108,7 +108,6 @@ questions = {
 """
 These are the possible options to the quiz questions
 """
-
 options = [["A: Richard Webber", "B: Wade Wilson", "C: Slade Wilson"],
     ["A: 2000", "B: 2016", "C: 1991"],
         ["A: 2000", "B: 2016", "C: 2018"],
