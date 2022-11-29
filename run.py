@@ -58,6 +58,13 @@ def play_again():
     """
     An option to restart the quiz
     """
+    response = input("Wanna try again? (YES or NO): ")
+    response = response.strip().lower()
+
+    if response == "YES":
+        return True
+    else:
+        return False
 
 
 """
