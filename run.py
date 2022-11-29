@@ -1,19 +1,23 @@
-def game_start():
+name = ""
+
+
+def game_intro():
     """
-    TheIntro to the game, Introducing to the player
+    TheIntro to the game, Introducing to the player 
+    and asks for name
     """
     global name
     name = input("Unless your name is Deadpool.. Enter your name here:\n")
 
     if name == "":
         print("Any name will do..")
-        game_start()
+        game_intro()
     elif name == "Deadpool".strip().lower():
         print("Ooohkay, go on then 'Mr. Pool'")
-        new_game()
+        game_intro()
     else:
         print(f"\n Welcome {name} to the quiz all about Deadpool!\n")
-        new_game()
+        game_intro()
 
 
 def new_game():
