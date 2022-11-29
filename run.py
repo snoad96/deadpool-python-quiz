@@ -7,7 +7,7 @@ def new_game():
     question_num = 1
 
     for key in questions:
-        print("---------------")
+        print("-|-|-|-|-|-|-|-")
         print(key)
         for i in options[question_num-1]:
             print(i)
@@ -39,7 +39,7 @@ def display_score(correct_guesses, guesses):
     print("_>_>_>_>_>_>")
     print("Scores")
     print("_>_>_>_>_>_>")
-    
+
     print("Answers: ", end="")
     for i in questions:
         print(questions.get(i), end=" ")
@@ -51,7 +51,7 @@ def display_score(correct_guesses, guesses):
     print()
 
     score = int((correct_guesses/len(questions))*100)
-    print(f"You manged to get: "+str(score)+"%")
+    print("You manged to get: "+str(score)+"%")
 
 
 def play_again():
@@ -87,14 +87,14 @@ questions = {
 These are the possible options to the quiz questions
 """
 
-options = [["A: Richard Webber","B: Wade Wilson","C: Slade Wilson"],
+options = [["A: Richard Webber", "B: Wade Wilson", "C: Slade Wilson"],
     ["A: 2000", "B: 2016", "C: 1991"],
-    ["A: 2000", "B: 2016", "C: 2018"],
-    ["A: Rogue", "B: Storm", "C: Vanessa"],
-    ["A: Cows", "B: Apples", "C: Driving"],
-    ["A: Sherlock Holmes", "B: Moby Dick", "C: All of the above"],
-    ["A: USA", "B: UK", "C: Canada"],
-    ["A: X-Men Origins: Wolverine", "B: Deadpool: 1", "C: Deadpool: 2"]]
+        ["A: 2000", "B: 2016", "C: 2018"],
+        ["A: Rogue", "B: Storm", "C: Vanessa"],
+        ["A: Cows", "B: Apples", "C: Driving"],
+        ["A: Sherlock Holmes", "B: Moby Dick", "C: All of the above"],
+        ["A: USA", "B: UK", "C: Canada"],
+        ["A: X-Men Origins: Wolverine", "B: Deadpool: 1", "C: Deadpool: 2"]]
 
 
 new_game()
