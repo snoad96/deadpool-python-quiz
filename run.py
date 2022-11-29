@@ -1,6 +1,24 @@
+def game_start():
+    """
+    TheIntro to the game, Introducing to the player
+    """
+    global name
+    name = input("Unless your name is Deadpool.. Enter your name here:\n")
+
+    if name == "":
+        print("Any name will do..")
+        game_start()
+    elif name == "Deadpool".strip().lower():
+        print("Ooohkay, go on then 'Mr. Pool'")
+        new_game()
+    else:
+        print(f"\n Welcome {name} to the quiz all about Deadpool!\n")
+        new_game()
+
+
 def new_game():
     """
-    The start of the Game, Introducing to the player
+    The beginning of the game
     """
     guesses = []
     correct_guesses = 0
