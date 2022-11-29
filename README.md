@@ -26,19 +26,24 @@ The live website can be viewed through Heroku using this link:
 
 ## The Ideas
 
-My initial Idea was to make an RPG inspired game through Python, I spent a long time on it, but realised there was too much that I had planned in the time-frame I had.
+The initial Idea was to make an RPG inspired game through Python, this took some time to make and was a while into the progress, but realised there was too much planned in the time-frame to do this.
 
-Instead I changed over to a quiz style instead. I came up with this idea because I enjoy the comic book genre, specifically Deadpool, and think that others would too if they saw how complex of a character he is.
+Instead changed over to a quiz style instead, this idea was brought about because everyone should enjoy the comic book genre, specifically Deadpool if they saw how complex of a character he is.
 
-I had a rough idea of how I was going to do this, compared to having limited ideas on the original RPG story telling game.
+The rough planning was there about how to do this, compared to having limited ideas on the original RPG story telling game.
 This made it easier to start and also made writing the correct code a little bit easier in the beginning.
 
 ## How To Play
 -   The Idea of the quiz is quite simple and because I was limited with design features, compared to the previous projects with HTML and CSS. The way to play is very easy to understand and is also explained at the start of the game.
 
-    You have multiple choice answers to questions revolving around deadpool.
+    The user has multiple choice answers to questions revolving around deadpool.
     Each time the user makes a choice, they will be informed everytime they input a possible answer.
     At the end of the quiz, the game will then tell you out of percent (%), how well you did.
     I like this percentage feature as it makes it easier for me to add to it or change the quiz around later on.
 
- 
+ ## Features
+
+-   Because this was a project specifically done within Python, I had used the template given to me for assessment and have not added any HTML or CSS, it is strictly Python that I have used.
+
+-   I have added a feature where the user is able to add their name at the start of the game, the idea is to make it more user friendly and feel more familiar to the user.
+-   
