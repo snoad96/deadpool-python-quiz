@@ -14,10 +14,9 @@ def game_intro():
         game_intro()
     elif name == "Deadpool".strip().lower():
         print("Ooohkay, go on then 'Mr. Pool'")
-        game_intro()
     else:
         print(f"\n Welcome {name} to the quiz all about Deadpool!\n")
-        game_intro()
+    new_game()
 
 
 def new_game():
@@ -33,7 +32,7 @@ def new_game():
         print(key)
         for i in options[question_num-1]:
             print(i)
-        guess = input("Try (A, B, or C)").strip().lower()
+        guess = input("Try (A, B, or C)").strip().upper()
         guesses.append(guess)
 
         correct_guesses += check_answer(questions.get(key), guess)
@@ -108,17 +107,17 @@ questions = {
 """
 These are the possible options to the quiz questions
 """
-options = [["A: Richard Webber", "B: Wade Wilson", "C: Slade Wilson"],
+options = [
+    ["A: Richard Webber", "B: Wade Wilson", "C: Slade Wilson"],
     ["A: 2000", "B: 2016", "C: 1991"],
-        ["A: 2000", "B: 2016", "C: 2018"],
-        ["A: Rogue", "B: Storm", "C: Vanessa"],
-        ["A: Cows", "B: Apples", "C: Driving"],
-        ["A: Sherlock Holmes", "B: Moby Dick", "C: All of the above"],
-        ["A: USA", "B: UK", "C: Canada"],
-        ["A: X-Men Origins: Wolverine", "B: Deadpool: 1", "C: Deadpool: 2"]]
-
-
-new_game()
+    ["A: 2000", "B: 2016", "C: 2018"],
+    ["A: Rogue", "B: Storm", "C: Vanessa"],
+    ["A: Cows", "B: Apples", "C: Driving"],
+    ["A: Sherlock Holmes", "B: Moby Dick", "C: All of the above"],
+    ["A: USA", "B: UK", "C: Canada"],
+    ["A: X-Men Origins: Wolverine", "B: Deadpool: 1", "C: Deadpool: 2"],
+]
+game_intro()
 
 while play_again():
     new_game()
