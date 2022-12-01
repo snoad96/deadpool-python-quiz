@@ -1,13 +1,14 @@
 # The Deadpool Python Quiz
-- This is a quiz within the Terminal inspired by the comic/ character: Deadpool
-The purpose of this activity was to make a fun and simple quiz for fans and/or newbies that would like to test their knowledge about the character Deadpool. 
+- This is a quiz within the Terminal inspired by the comic/ character: Deadpool.
+- The purpose of this activity was to make a fun and simple quiz. 
+- For fans and/or newbies that would like to test their knowledge about the character Deadpool. 
 
 ![Responsive Mockup](/readme_doc/screenshots/python_intro.PNG)
 
 The live website can be viewed through Heroku using this link: 
-[View The Deadpool Quiz Here](https://deadpool-python-quiz.herokuapp.com/)
+- [View The Deadpool Quiz Here](https://deadpool-python-quiz.herokuapp.com/)
 
-[GitHub Repository](https://github.com/snoad96/deadpool-python-quiz)
+- [GitHub Repository](https://github.com/snoad96/deadpool-python-quiz)
 
 
 ## Contents
