@@ -7,7 +7,8 @@ def game_intro():
     and asks for name
     """
     global name
-    name = input("Unless your name is Deadpool.. Enter your name here:\n").strip().lower()
+    name = input("Unless your name is Deadpool.."
+                 "Enter your name here:\n").strip().lower()
     if name == "":
         print("Any name will do..")
         game_intro()
