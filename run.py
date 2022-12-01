@@ -104,6 +104,7 @@ def play_again():
         new_game()
     else:
         print("Guess you aren't nerdy enough.. Thanks for playing!")
+        exit()
 
 
 """
@@ -136,4 +137,3 @@ options = [
     ["A: X-Men Origins: Wolverine", "B: Deadpool: 1", "C: Deadpool: 2"],
 ]
 game_intro()
-
