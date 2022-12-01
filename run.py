@@ -26,18 +26,24 @@ def new_game():
     guesses = []
     correct_guesses = 0
     question_num = 1
-
     for key in questions:
         print("-|-|-|-|-|-|-|-")
         print(key)
         for i in options[question_num-1]:
             print(i)
-        guess = input("Try (A, B, or C)").strip().upper()
+        guess = ''
+        possible_answers = ['A', 'B', 'C']
+        while guess not in possible_answers:
+            guess = input("Try (A, B, or C)").strip().upper()
+            if guess == '':
+                print('Hey you need to enter something not just spaces')
+                continue
+            if guess not in possible_answers:
+                print("Hey you need to enter something like")
+                print("A, B or C... Wake up!")
         guesses.append(guess)
-
         correct_guesses += check_answer(questions.get(key), guess)
         question_num += 1
-
     display_score(correct_guesses, guesses)
 
 
