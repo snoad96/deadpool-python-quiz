@@ -7,7 +7,8 @@ def game_intro():
     and asks for name
     """
     global name
-    name = input("Unless your name is Deadpool.. Enter your name here:\n")
+    name = input("Unless your name is Deadpool.."
+        "Enter your name here:\n").strip().lower()
 
     if name == "":
         print("Any name will do..")
@@ -80,7 +81,7 @@ def play_again():
     An option to restart the quiz
     """
     response = input("Wanna try again? (YES or NO): ")
-    response = response.strip().lower()
+    response = response.strip().upper()
 
     if response == "YES":
         return True
