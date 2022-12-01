@@ -78,9 +78,14 @@ No errors were found during testing.
 
 
 ## Deployment
-### Gitpod and GitHub
-
-
-
+### To Heroku
+1. Make sure to fork or clone your repository.
+2. Go to [Heroku](https://id.heroku.com/login)
+3. Create a new app.
+4. Choose your apps name and create.
+5. Install buildpacks, 
+    - Choose Python and Node.js, in that order.
+6. On the 'Deploy' section, Connect to GitHub and search for you repository.
+7. Choose branch and deploy! You will have the option to redeploy automatically or manually.
 
 ## Credits
