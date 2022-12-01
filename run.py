@@ -27,7 +27,7 @@ def new_game():
     guesses = []
     correct_guesses = 0
     question_num = 1
-    
+
     for key in questions:
         print("-|-|-|-|-|-|-|-")
         print(key)
@@ -44,10 +44,10 @@ def new_game():
                 print("Hey you need to enter something like")
                 print("A, B or C... Wake up!")
         guesses.append(guess)
-        
+
         correct_guesses += check_answer(questions.get(key), guess)
         question_num += 1
-    
+
     display_score(correct_guesses, guesses)
 
 
@@ -70,17 +70,17 @@ def display_score(correct_guesses, guesses):
     print("_>_>_>_>_>_>")
     print("Scores")
     print("_>_>_>_>_>_>")
-    
+
     print("Answers: ", end="")
     for i in questions:
         print(questions.get(i), end=" ")
     print()
-    
+
     print("Guesses: ", end="")
     for i in guesses:
         print(i, end=" ")
     print()
-    
+
     score = int((correct_guesses/len(questions))*100)
     print("You manged to get: "+str(score)+"%")
     play_again()
@@ -90,13 +90,20 @@ def play_again():
     """
     An option to restart the quiz
     """
-    response = input("Wanna try again? (YES or NO): ")
-    response = response.strip().upper()
+    response = ''
+    possible_reponses = ['YES', 'NO']
+    while response not in possible_reponses:
+        response = input("Wanna try again? (YES or NO): ").strip().upper()
+        if response == '':
+            print('Hey you need to enter something not just spaces')
+            continue
+        if response not in possible_reponses:
+            print('Hey you need to enter something like YES, NO .... Wake up!')
 
     if response == "YES":
-        return True
+        new_game()
     else:
-        return False
+        print("Guess you aren't nerdy enough.. Thanks for playing!")
 
 
 """
@@ -130,7 +137,3 @@ options = [
 ]
 game_intro()
 
-while play_again():
-    new_game()
-
-print("Guess you aren't nerdy enough.")
