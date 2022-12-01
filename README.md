@@ -89,3 +89,8 @@ No errors were found during testing.
 7. Choose branch and deploy! You will have the option to redeploy automatically or manually.
 
 ## Credits
+
+- I would like to thank the slack community for their help and advice throughout this part of the course.
+- StackOverflow, for general questions and queries in regards to what I had planned for this challenge.
+- My mentor Spence, for making sure I stay within what is required for the project and not with my original plan. 
+  For guiding me to the right answers when I have been unsure where to look
