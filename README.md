@@ -2,7 +2,7 @@
 - This is a quiz within the Terminal inspired by the comic/ character: Deadpool
 The purpose of this activity was to make a fun and simple quiz for fans and/or newbies that would like to test their knowledge about the character Deadpool. 
 
-![Responsive Mockup](#)
+![Responsive Mockup](/readme_doc/screenshots/python_intro.PNG)
 
 The live website can be viewed through Heroku using this link: 
 [View The Deadpool Quiz Here](https://deadpool-python-quiz.herokuapp.com/)
@@ -46,20 +46,32 @@ I already had some questions and answers lined up, which would fit perfectly int
 -   Because this was a project specifically done within Python, I had used the template given to me for assessment and have not added any HTML or CSS, it is strictly Python that I have used.
 
 -   I have added a feature where the user is able to add their name at the start of the game, the idea is to make it more user friendly and feel more familiar to the user.
--   A fun feature that is implemented into this challenge is the score total out of 100%, 
-    I like this percentage feature as it makes it easier for me to add to it or change the quiz around later on.
+![enter-name](/readme_doc/screenshots/python_intro.PNG)
+-   A fun feature that is implemented into this challenge is the score total out of 100% 
+    
+    ![score-checker](/readme_doc/screenshots/scores.PNG)
+
+-    I like this percentage feature as it makes it easier for me to add to it or change the quiz around later on.
 
 ## Future features
 - Future features that would be interesing to implement would be;
     - A google sheet to save names and scores of users to improve playability.
     - A Timer for each question to add a bit off stress and captivity for the user.
-    - Make the project have more intresting styles, colors etc..
+    - Make the project have more intresting styles, colors etc.. I was limited with what I could do in this project.
 
 ##  Testing
+This project has been tested using Code Institutes own [pep8 Python Linter](https://pep8ci.herokuapp.com/)
 
+![pep8](readme_doc/screenshots/python_valid.PNG)
+
+No issues were found during testing.
 
 ### bugs
 -    Resolved Bugs
+    -   I had a few issues with Deploying the play_again feature,
+        The game would constantly exit after playing once, even after writing the loop to be able to use the play again feature.
+        this took me a while to find the bug. But was easily rectified after speaking to my mentor and using stack overflow to problem solve.
+    -   
 -    Remaining Bugs
 
 
