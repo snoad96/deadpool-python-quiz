@@ -20,7 +20,6 @@ The live website can be viewed through Heroku using this link:
     -    bugs
         -    Resolved Bugs
         -    Remaining Bugs
--   Validator Testing
 -   Deployment
 -   Credits
 
@@ -64,18 +63,18 @@ This project has been tested using Code Institutes own [pep8 Python Linter](http
 
 ![pep8](readme_doc/screenshots/python_valid.PNG)
 
-No issues were found during testing.
+No errors were found during testing.
 
 ### bugs
 -    Resolved Bugs
     -   I had a few issues with Deploying the play_again feature,
         The game would constantly exit after playing once, even after writing the loop to be able to use the play again feature.
         this took me a while to find the bug. But was easily rectified after speaking to my mentor and using stack overflow to problem solve.
-    -   
--    Remaining Bugs
+        I just had to rewrite some of the code within the play_again().
+    -   I could control what happened when the user pressed space but had trouble defining what would happen when the user tried a different invalid key.
+        I had got the majority of the code correct, but after a meeting with my mentor and being guided towards the right answer, I had figured out I had to rewrite some of it and basically add it to any place where the user could potentially press an invalid key.
 
-
-## Validator Testing
+-   There are no known bugs remaining.
 
 
 ## Deployment
