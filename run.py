@@ -110,7 +110,6 @@ def play_again():
 """
 These are the quiz Questions inside a dictionary
 """
-
 questions = {
     "What is Deadpools real name?": "B",
     "When was the first Deadpool comic released": "C",
